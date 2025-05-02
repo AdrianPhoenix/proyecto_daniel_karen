@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-</head>
-<body>
-    <h1>Dashboard</h1>
-</body>
+
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Admin Panel</h2>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="#overview">Resumen</a></li>
+          <li><a href="#users">Usuarios</a></li>
+          <li><a href="#settings">Configuración</a></li>
+          <li><a href="#logout">Cerrar Sesión</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="main-header">
+          <h1>Bienvenido, Administrador</h1>
+        </header>
+        <section class="content">
+          <p>
+            Este es tu panel de administración. Aquí puedes gestionar usuarios,
+            ver estadísticas y configurar el sistema.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
