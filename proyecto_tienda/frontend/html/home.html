@@ -13,19 +13,25 @@
     <main>
       <h2 class="title">Tienda DK</h2>
 
-      <button>Ingresar Producto</button>
+      <button id="open-modal">Ingresar Producto</button>
 
-      <form class="form">
-        <input type="file" accept="image/*" class="image" />
-        <input
-          type="text"
-          name="producto"
-          placeholder="producto"
-          class="producto"
-        />
-        <input type="number" placeholder="precio" class="precio" />
-        <input type="submit" value="Enviar" />
-      </form>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <button class="close-modal" id="close-modal">X</button>
+          <h2>Ingresar Producto</h2>
+          <form class="form">
+            <input type="file" accept="image/*" class="image" />
+            <input
+              type="text"
+              name="producto"
+              placeholder="Producto"
+              class="producto"
+            />
+            <input type="number" placeholder="Precio" class="precio" />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
 
       <section class="productos"></section>
       <section class="factura">
@@ -84,7 +90,7 @@
       </section>
     </main>
     <script src="../js/home_products.js"></script>
-    <script src=".../js/home.js"></script>
+    <script src="../js/home.js"></script>
      
   </body>
 </html>

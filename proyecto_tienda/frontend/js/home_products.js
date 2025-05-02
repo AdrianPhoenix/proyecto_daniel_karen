@@ -41,7 +41,7 @@ fetch("http://localhost:4001/productos")
             max="10"
             value="1"
           />
-            <button onclick="agregarProducto(${element.producto}, ${element.price}, ${element.id})">
+            <button onclick='agregarProducto("${element.producto}", ${element.price}, "${element.id}")'>
               Agregar
             </button>
         </div>
@@ -89,5 +89,26 @@ form.addEventListener("submit", async (event) => {
   } catch (error) {
     console.error("Error:", error);
     alert("Error al conectar con el servidor");
+  }
+});
+
+const openModalButton = document.getElementById("open-modal");
+const closeModalButton = document.getElementById("close-modal");
+const modal = document.getElementById("modal");
+
+// Abrir la ventana emergente
+openModalButton.addEventListener("click", () => {
+  modal.classList.add("active");
+});
+
+// Cerrar la ventana emergente
+closeModalButton.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
+
+// Cerrar la ventana emergente al hacer clic fuera del contenido
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.classList.remove("active");
   }
 });
