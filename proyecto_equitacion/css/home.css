@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1461c5;
+  --color-primary-black: #001a6e;
+  --color-black: black;
+  --color-white: white;
+
+  --border-radius: 0.5rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 5rem;
+  display: grid;
+
+  grid-template-columns: 1;
+  grid-template-rows: 10% 1fr 10%;
+  font-family: Arial, sans-serif;
+
+  background-color: var(--color-primary-black);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* *************************************************************** */
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.section1 {
+  background: var(--color-primary);
+  grid-column: span 2;
+
+
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  position: relative;
+}
+
+.section1 img {
+  width: 50%;
+  
+  
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.section1 .content{
+    width: 50%;
+    padding: 2rem;
+
+    gap: 5rem;
+}
+.section1 .content h1{
+    text-align: center;
+
+}
+
+.section1 .content p{
+    margin: 2rem 0;
+}
+
+.section1 .content button{
+    padding: .3rem 1rem;
+}
+
+.section2 {
+  background: var(--color-primary);
+
+  grid-column: span 1;
+
+  border-radius: var(--border-radius);
+}
+.section3 {
+  background: var(--color-primary);
+
+  grid-column: span 1;
+
+  border-radius: var(--border-radius);
+}
+.section4 {
+  background: var(--color-primary);
+
+  grid-column: span 2;
+
+  border-radius: var(--border-radius);
+}
+
+/* ========================= */
+
+.footer {
+  background: var(--color-white);
+}
