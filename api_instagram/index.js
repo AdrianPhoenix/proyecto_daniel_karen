@@ -19,7 +19,7 @@ const data = [
     likes: "1,234 Me gusta",
     description: "Descripción de la publicación...",
     comments: "Ver todos los comentarios",
-    urlPost: "https://www.instagram.com",
+    urlPost: "https://www.instagram.com/p/DJTKizaNWre/?img_index=1",
   },
   {
     urlImgProfile: "./assets/profile.jpg",
@@ -29,7 +29,7 @@ const data = [
     likes: "1,234 Me gusta",
     description: "Descripción de la publicación...",
     comments: "Ver todos los comentarios",
-    urlPost: "https://www.instagram.com",
+    urlPost: "https://www.instagram.com/p/DJTKEBzNsoA/",
   },
   {
     urlImgProfile: "./assets/profile.jpg",
@@ -39,7 +39,7 @@ const data = [
     likes: "1,234 Me gusta",
     description: "Descripción de la publicación...",
     comments: "Ver todos los comentarios",
-    urlPost: "https://www.instagram.com",
+    urlPost: "https://www.instagram.com/p/DJTJ7oqNUKY/",
   },
   {
     urlImgProfile: "./assets/profile.jpg",
@@ -49,7 +49,7 @@ const data = [
     likes: "1,234 Me gusta",
     description: "Descripción de la publicación...",
     comments: "Ver todos los comentarios",
-    urlPost: "https://www.instagram.com",
+    urlPost: "https://www.instagram.com/p/DJTJ1K8N7jM/",
   },
   {
     urlImgProfile: "./assets/profile.jpg",
@@ -59,7 +59,7 @@ const data = [
     likes: "1,234 Me gusta",
     description: "Descripción de la publicación...",
     comments: "Ver todos los comentarios",
-    urlPost: "https://www.instagram.com",
+    urlPost: "https://www.instagram.com/p/DJTJq2ENbFL/",
   },
 ];
 
@@ -70,7 +70,7 @@ const createCard = (card) => {
       <div class="card-header">
         <img src="${card.urlImgProfile}" alt="Profile Picture" class="profile-pic" />
         <div class="user-info">
-          <h3>${card.user}</h3>
+          <a><h3>${card.user}</h3></a>
           <p>${card.location}</p>
         </div>
       </div>
