@@ -1,81 +1,108 @@
-body {
+/* Variables de colores */
+:root {
+  --color-primary: #4caf50;
+  --color-primary-hover: #45a049;
+  --color-secondary: #ffd700;
+  --color-text: #333;
+  --color-text-light: #666;
+  --color-background: #f9f9f9;
+  --color-white: #ffffff;
+  --color-black-overlay: rgba(0, 0, 0, 0.5);
+}
+
+/* Reset y configuración básica */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: var(--color-background);
+  color: var(--color-text);
   display: flex;
   height: 100vh;
 }
-
+/* Contenedor principal */
 .dashboard-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  height: 100vh;
 }
+
 
 /* Sidebar */
 .sidebar {
-  width: 250px;
-  background-color: #333;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
 }
 
 .sidebar-header {
-  margin-bottom: 30px;
   text-align: center;
 }
 
 .sidebar-header h2 {
-  font-size: 20px;
-  margin: 0;
-  color: #00bcd4;
+  font-size: 1.5rem;
 }
 
 .sidebar-menu {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .sidebar-menu li {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
-.sidebar-menu a {
+.sidebar-menu li a {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
-  display: block;
-  padding: 10px;
+  color: var(--color-white);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Espaciado entre el icono y el texto */
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
+.sidebar-menu li a:hover {
+  background-color: var(--color-primary-hover);
+}
 
-.sidebar-menu a:hover {
-  background-color: #00bcd4;
+
+.sidebar-menu li a i {
+  font-size: 1.2rem; /* Tamaño del icono */
+}
+
+.sidebar-menu li a:hover {
+  background-color: var(--color-primary-hover);
 }
 
 /* Main Content */
 .main-content {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
+  background-color: var(--color-white);
+  padding: 2rem;
   overflow-y: auto;
 }
 
 .main-header {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .main-header h1 {
-  font-size: 24px;
-  color: #333;
+  font-size: 2rem;
+  color: var(--color-primary);
 }
 
-.content {
-  font-size: 16px;
-  color: #555;
+.content p {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
 }
+
+
