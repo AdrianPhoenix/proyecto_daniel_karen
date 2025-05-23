@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/dashboard01.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>Panel de Administración</h2>
+        </div>
+        <ul class="sidebar-menu">
+          <li>
+            <a href="#overview"><i class="fas fa-chart-line"></i> Resumen</a>
+          </li>
+          <li>
+            <a href="#users"><i class="fas fa-users"></i> Usuarios</a>
+          </li>
+          <li>
+            <a href="#settings"><i class="fas fa-cogs"></i> Configuración</a>
+          </li>
+          <li>
+            <a href="./home.html"
+              ><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="main-header">
+          <h1>Bienvenido, Profesor (a)</h1>
+        </header>
+        <section class="content">
+          <p>
+            Este es tu panel de administración. Aquí puedes gestionar usuarios,
+            ver estadísticas y configurar el sistema.
+          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae, 
+            vitae alias unde nobis repudiandae deleniti fuga architecto placeat ab qui ut 
+            dignissimos omnis quidem in eligendi, vero voluptatibus natus.</p>
+        </section>
+
+        <!--Table-->
+        <table class="table"> 
+
+            <tr>
+              <th>Cursos</th>
+              <th class="Horario">Horario del Curso</th>
+              <th class="Dias">Dias </th>
+              <th>Nro. de Estudiantes</th>
+              <th>Caballos Asignados</th>
+            </tr>
+            <tr>
+              <td>Clase 1</td>
+              <td>10:00 am - 12:00 pm</td>
+              <td>Lunes, Miercoles, Viernes</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td class="celdas__color2">Clase 2</td>
+              <td class="celdas__color2">10:00 am - 12:00 pm</td>
+              <td class="celdas__color2">Lunes, Miercoles, Viernes</td>
+              <td class="celdas__color2">18</td>
+              <td class="celdas__color2">10</td>
+            </tr>
+            <tr>
+              <td>Equinoterapia</td>
+              <td>10:00 am - 12:00 pm</td>
+              <td>Lunes, Miercoles, Viernes</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td class="celdas__color2">Equinoterapia</td>
+              <td class="celdas__color2">10:00 am - 12:00 pm</td>
+              <td class="celdas__color2">Lunes, Miercoles, Viernes</td>
+              <td class="celdas__color2">18</td>
+              <td class="celdas__color2">10</td>
+            </tr>
+            <tr>
+              <td>Clase 3</td>
+              <td>10:00 am - 12:00 pm</td>
+              <td>Lunes, Miercoles, Viernes</td>
+              <td>18</td>
+              <td>10</td>
+            </tr> 
+             <tr>
+              <td class="celdas__color2">Equinoterapia</td>
+              <td class="celdas__color2">10:00 am - 12:00 pm</td>
+              <td class="celdas__color2">Lunes, Miercoles, Viernes</td>
+              <td class="celdas__color2">18</td>
+              <td class="celdas__color2">10</td>
+            </tr>
+            <tr>
+              <td>Clase 4</td>
+              <td>10:00 am - 12:00 pm</td>
+              <td>Lunes, Miercoles, Viernes</td>
+              <td>18</td>
+              <td>10</td>
+            </tr>  
+            
+        </table>
+      </main>
+    </div>
+  </body>
+</html>
